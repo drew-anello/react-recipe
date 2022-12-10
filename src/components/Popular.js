@@ -16,6 +16,7 @@ function Popular () {
   }
   return (
     <div>
+      // this will have data populate on page.
       {popular.map(recipe => {
         return (
           <div>
