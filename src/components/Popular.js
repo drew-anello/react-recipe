@@ -13,9 +13,18 @@ function Popular () {
     )
     const data = await api.json()
     setPopular(data.recipes)
-    console.log(data)
   }
-  return <div>Popular</div>
+  return (
+    <div>
+      {popular.map(recipe => {
+        return (
+          <div>
+            <p>{recipe.title}</p>
+          </div>
+        )
+      })}
+    </div>
+  )
 }
 
 export default Popular
