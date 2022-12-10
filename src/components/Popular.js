@@ -1,6 +1,7 @@
 import { useEffect } from 'react'
 
 function Popular () {
+  //   tells react it needs to do something after render.
   useEffect(() => {
     getPopular()
   }, [])
@@ -9,6 +10,7 @@ function Popular () {
       `https://api.spoonacular.com/recipes/random?apiKey=${process.env.REACT_APP_API_KEY}&number=9`
     )
     const data = await api.json()
+    console.log(data)
   }
   return <div>Popular</div>
 }
