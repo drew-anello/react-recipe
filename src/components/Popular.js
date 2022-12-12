@@ -15,8 +15,8 @@ function Popular () {
     setPopular(data.recipes)
   }
   return (
+    // this will have data populate on page.
     <div>
-      // this will have data populate on page.
       {popular.map(recipe => {
         return (
           <div>
