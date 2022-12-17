@@ -8,4 +8,4 @@ This is a react application that calls to a recipe api to display random recipes
 - Spoonacular Random Recipe API
 - CSS
 
-
+ 
